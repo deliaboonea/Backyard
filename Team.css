@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    font-size: 24px; /* Increase the font size to make it bigger */
+  }
+  
+  body {
+    background-color: black;
+    padding-top: 120px; /* Adaugare spatiu pentru header */
+    padding-bottom: 300px; /* Adaugare spatiu pentru footer */
+    position: relative; /* Poziționează footer-ul relativ la corpul paginii */
+  }
+  
+  .gallery-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 70px; /* Ajustare pentru a muta imaginile în jos */
+    margin-bottom: 150px; /* Aducere de spațiu între galerie și footer */
+    overflow-x: hidden; /* Ascundere derulare orizontală */
+    overflow-y: hidden; /* Ascundere derulare verticală */
+  }
+  
+  #backbtn, #nextbtn {
+    width: 100px; /* Increase the button width */
+    height: 100px; /* Increase the button height */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .gallery {
+    display: flex;
+    align-items: center; /* Center the images vertically */
+    justify-content: center; /* Center the images horizontally */
+    width: 100%;
+    scrollbar-width: none; /* Hide scrollbar */
+    -ms-overflow-style: none; /* Hide scrollbar */
+  }
+  
+  .gallery img {
+    width: 800px; /* Increase the image width */
+    height: 600px; /* Increase the image height */
+    object-fit: cover; /* Ensure images maintain their aspect ratio */
+    margin: 0 5px;
+  }
+  
+  .gallery span {
+    flex: 0 0 auto; /* Ensure each image has its own size */
+  }
+  
+  .gallery::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+
+  header {
+    position: fixed; /* Face ca header-ul să rămână fix pe ecran */
+    top: 0; /* Plasează header-ul în partea de sus a paginii */
+    left: 0; /* Plasează header-ul în partea stângă a paginii */
+    width: 100%; /* Asigură că header-ul ocupă întreaga lățime a ecranului */
+    background-color: #000000; /* Culoarea de fundal a header-ului */
+    color: #fff; /* Culoarea textului */
+    padding: 15px; /* Spațierea în interiorul header-ului */
+    text-align: center; /* Alinierea textului în centru */
+    display: flex; /* Folosirea modelului flexbox pentru alinierea elementelor */
+    justify-content: space-between; /* Alinierea elementelor în spațiu egal între ele */
+    align-items: center; /* Alinierea elementelor pe axa verticală */
+    z-index: 1000; /* Asigură că header-ul este plasat deasupra altor elemente */
+    font-size: 18px;
+}
+
+
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 20 px  ;
+    margin: 0;
+}
+
+.menu-item {
+    display: inline-block;
+    margin-right: 60px; /* Spațiu între itemi mărit */
+}
+
+.menu-item:last-child {
+    margin-right: 0; /* Elimină margin-right pentru ultimul item */
+}
+
+.login_icon {
+    width: 30px;
+    height: auto;
+}
+
+.small-image {
+    width: 130px;
+    height: auto;
+    float: right;
+    margin-right: 50px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 15px;
+    margin: 0 ;
+    font-family: "Lucida Handwriting", cursive;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li:first-child {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 30px 40px; /* nav bar scroll umbra */
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Asigură că containerul ocupă întreaga înălțime a ferestrei */
+}
+
+img {
+    width: 200px; /* Dimensiunea imaginilor */
+    height: auto;
+    margin: 10px; /* Spațiu între imagini */
+    transition: transform 0.3s ease; /* Adaugă o tranziție lină pentru transformări */
+}
+.team {
+  font-size: 25px;
+  font-family: "Lucida Handwriting", cursive;
+  color: #fff;
+  padding: 70px;
+  justify-content: center;
+  margin-left: 20px;
+  margin-inline: 30px;
+  text-indent: 50px; /* Adaugă alineat */
+  line-height: 1.5;  /* Ajustează înălțimea liniei pentru a lăsa mai mult spațiu între rânduri */
+}
+
+

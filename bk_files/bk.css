@@ -1,0 +1,202 @@
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #434343;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+
+
+@keyframes titleAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; /* Setează culoarea de fundal la negru */
+    color: #000000; /* Setează culoarea textului la alb */
+    padding: 20px; /* Adaugă un padding pentru a face footerul mai spațios */
+}
+
+.footer img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Add more styles as needed */
+
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between, flex-end, center;
+    align-items: center;
+}
+
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu-item {
+    display: inline-block;
+    margin-right: 10px;
+    visibility: visible; /* Add this line to make the login_icon visible all the time */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 15px;
+    margin: 0 ;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li:first-child {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 30px 40px; /* nav bar scroll umbra */
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.search {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+}
+
+.small-image {
+    width: 150px; /* Ajustați dimensiunea imaginii la nevoie */
+    height: auto; /* Asigură menținerea proporțiilor imaginii */
+    float:  right; /* Plasează imaginea în stânga */
+    margin-right: 60px; /* Spațiu între imagine și itemii din meniu */
+}
+.login_icon {
+    width: 30px; 
+    height: auto;   
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between; /* Distribuie spațiul între itemii meniului */
+    align-items: center;
+    margin-right: 20px; /* Spațiu între meniu și marginea din dreapta a ecranului */
+}
+
+.menu li.search {
+    margin-left: auto; /* Plasează elementul de căutare la marginea din dreapta a meniului */
+}
+
+.search form {
+    display: flex;
+    align-items: center;
+}
+
+.search input[type="text"] {
+    margin-right: 5px; /* Spațiu între caseta de căutare și butonul de căutare */
+}
+
+.search button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.menu-item {
+    display: inline-block; /* Asigură alinierea orizontală a itemilor din meniu */
+    margin-right: 10px; /* Spațiu între itemi */
+}
+
+second-header {
+    background-color: #333; /* Culorile și stilul pot fi personalizate */
+    text-align: center;
+}
+
+.header-content img {
+    max-width: 100%; /* Asigură ca imaginea să nu depășească lățimea conținutului */
+    height: auto; /* Asigură menținerea proporțiilor imaginii */
+}
+
+.events {
+    background-color: #070606; /* culoarea de fundal pentru zona de evenimente */
+    padding: 20px; /* adăugarea unui spațiu de 20px între conținut și marginea elementului */
+    text-align: justify; /* alinierea textului la centru */
+   
+}
+
+.events h2 {
+    color: #fdfdfd; /* culoarea textului pentru titlul evenimentelor */
+    font-family: "Segoe UI", sans-serif;
+}
+
+.events ul {
+    list-style-type: none; /* eliminarea marcării în listă */
+    padding: 0; /* eliminarea padding-ului implicit al listei */
+}
+
+.events li {
+    margin-bottom: 10px; /* adăugarea unui spațiu de 10px între fiecare element de listă */
+}
+

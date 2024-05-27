@@ -1,0 +1,187 @@
+body {
+    background-color: #000000; /* Fundal negru pentru întreaga pagină */
+    color: #ffffff; /* Text alb pentru întreaga pagină */
+}
+
+.story {
+    font-size: 24px;
+    font-family: "Lucida Handwriting", cursive; font-style: italic;
+    color: #ffffff; /* Text alb */
+    background-color: #000000; /* Fundal negru */
+    padding: 40px; /* Adăugăm puțin spațiu de margini pentru a separa textul de marginea ferestrei */
+    text-align: justify;
+    text-align-last: left;
+    margin-bottom: 10px;
+}
+
+.location {
+    display: flex;             /* Utilizează Flexbox pentru a facilita centrarea */
+    justify-content: center;   /* Centrează orizontal */
+    align-items: center;       /* Centrează vertical */
+    height: 100%h;             /* Asigură-te că containerul ocupă întreaga înălțime a paginii */
+    margin: 20px;              /* Adaugă margini în jurul imaginii */
+    width: 100%;
+  }
+  
+  .location img {
+    margin: 20px;              /* Adaugă margini în jurul imaginii */
+    max-width: 100%;           /* Asigură-te că imaginea nu depășește dimensiunea containerului */
+    height: auto;              /* Menține proporțiile imaginii */
+  }
+  
+
+.start {
+    text-align: center;
+    font-family: "Segoe UI", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    padding: 100px;
+}
+.photo2 {
+    width: 100%; /* Setăm lățimea imaginilor la 100% pentru a le face egale și pentru a umple întregul spațiu disponibil */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Aliniere verticală a imaginilor */
+    justify-content: space-between; /* Distribuie spațiul disponibil între elemente */
+}
+
+.left-image,
+.right-image {
+    flex: 1; /* Fiecare imagine ocupă 50% din spațiul containerului */
+    max-width: 50%; /* Limităm lățimea maximă a fiecărei imagini la 50% pentru a se încadra pe rând */
+}
+
+.right-image {
+    margin-left: 10px; /* Adăugăm un spațiu mic între imaginile stânga și dreapta */
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; /* Setează culoarea de fundal la negru */
+    color: #000000; /* Setează culoarea textului la alb */
+    padding: 20px; /* Adaugă un padding pentru a face footerul mai spațios */
+}
+
+.footer img {
+    width: 20px;
+    height: 10px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Add more styles as needed */
+
+header {
+    position: fixed; /* Face ca header-ul să rămână fix pe ecran */
+    top: 0; /* Plasează header-ul în partea de sus a paginii */
+    left: 0; /* Plasează header-ul în partea stângă a paginii */
+    width: 100%; /* Asigură că header-ul ocupă întreaga lățime a ecranului */
+    background-color: #000000; /* Culoarea de fundal a header-ului */
+    color: #fff; /* Culoarea textului */
+    padding: 15px; /* Spațierea în interiorul header-ului */
+    text-align: center; /* Alinierea textului în centru */
+    display: flex; /* Folosirea modelului flexbox pentru alinierea elementelor */
+    justify-content: space-between; /* Alinierea elementelor în spațiu egal între ele */
+    align-items: center; /* Alinierea elementelor pe axa verticală */
+    z-index: 1000; /* Asigură că header-ul este plasat deasupra altor elemente */
+    font-size: 18px;
+    font-family: "Lucida Handwriting", cursive;
+}
+
+
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 20 px  ;
+    margin: 0;
+}
+
+.menu-item {
+    display: inline-block;
+    margin-right: 80px; /* Spațiu între itemi mărit */
+}
+
+.menu-item:last-child {
+    margin-right: 0; /* Elimină margin-right pentru ultimul item */
+}
+
+.login_icon {
+    width: 30px;
+    height: auto;
+}
+
+.small-image {
+    width: 130px;
+    height: auto;
+    float: right;
+    margin-right: 50px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 15px;
+    margin: 0 ;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li:first-child {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 30px 40px; /* nav bar scroll umbra */
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Asigură că containerul ocupă întreaga înălțime a ferestrei */
+}
+
+img {
+    width: 200px; /* Dimensiunea imaginilor */
+    height: auto;
+    margin: 10px; /* Spațiu între imagini */
+    transition: transform 0.3s ease; /* Adaugă o tranziție lină pentru transformări */
+}
